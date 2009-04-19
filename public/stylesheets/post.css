@@ -1,0 +1,11 @@
+img.button {
+    cursor: hand;
+}
+
+div.even {
+    background: red;
+}
+
+div.odd {
+    background: green;
+}
