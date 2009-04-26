@@ -1,5 +1,40 @@
+body {
+    margin: 30px 40px 40px;
+    width: 50%;
+    background-color: #e6e6e6;
+    font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+
+    background-image: url(/images/wallpaper.png);
+    /* background-repeat: no-repeat; */
+}
+
+p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size:   13px;
+    line-height: 18px;
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 11px;
+}
+
+a {
+    color: #000;
+}
+
+a:visited {
+    color: #666;
+}
+
+a:hover {
+    color: #fff;
+    background-color:#000;
+}
+
 img.button {
-    cursor: hand;
+    cursor: pointer;
 }
 
 div.even {
@@ -9,3 +44,4 @@ div.even {
 div.odd {
     background: green;
 }
+
