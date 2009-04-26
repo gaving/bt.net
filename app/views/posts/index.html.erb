@@ -1,27 +1,8 @@
 <img title="Make a new post" class="button new" src="/images/new.png" />
-
 <br />
 <br />
-
-<div id="dialog">
+<div id="dialog" style="display: none">
 </div>
-
+<img id="spinner" src="/images/loader.gif" />
 <div id="container">
-    <% for post in @posts %>
-    <div id="<%=h post.id %>">
-        <div class="rounded">
-            <blockquote>
-                <p><%=h post.content %></p>
-            </blockquote>
-        </div>
-        <div style="float: right; margin-top: 5px">
-            <img title="View post" class="button view" src="/images/view.png" />
-            <img title="Edit post" class="button edit" src="/images/edit.png" />
-            <img title="Delete post" class="button delete" src="/images/remove.png" />
-        </div>
-        <cite class="rounded">
-            <strong><%=h post.name %></strong>
-        </cite>
-    </div>
-    <% end %>
 </div>

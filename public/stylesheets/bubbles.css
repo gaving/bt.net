@@ -70,3 +70,8 @@ div.slate div.rounded {
 div.slate cite.rounded {
     background: transparent url(/images/tip-pimped.gif) no-repeat 15px 0;
 }
+
+div.controls {
+    float: right;
+    margin-top: 5px
+}
