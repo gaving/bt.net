@@ -1,3 +1,11 @@
+<img title="Make a new post" class="button new" src="/images/new.png" />
+
+<br />
+<br />
+
+<div id="dialog">
+</div>
+
 <div id="container">
     <% for post in @posts %>
     <div id="<%=h post.id %>">
@@ -6,18 +14,14 @@
                 <p><%=h post.content %></p>
             </blockquote>
         </div>
+        <div style="float: right; margin-top: 5px">
+            <img title="View post" class="button view" src="/images/view.png" />
+            <img title="Edit post" class="button edit" src="/images/edit.png" />
+            <img title="Delete post" class="button delete" src="/images/remove.png" />
+        </div>
         <cite class="rounded">
             <strong><%=h post.name %></strong>
         </cite>
-        <div style="float: right">
-            <img class="button view" src="/images/view.png" />
-            <img class="button edit" src="/images/edit.png" />
-            <img class="button delete" src="/images/remove.png" />
-        </div>
     </div>
     <% end %>
 </div>
-
-<br />
-
-<%= link_to 'New post', new_post_path %>
